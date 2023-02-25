@@ -4,8 +4,7 @@
     "description": "Cyberthai core for accelerate development. Made for easy and fun development.",
     "keywords": ["cyberthai", "projects", "deawx", "msdos43", "easy", "Funny"],
     "homepage": "https://www.cyberthai.net",
-    "license": "Apache-2.0",
-    "version": "1.0.3",
+    "license": "Apache-2.0", 
     "authors": [{
         "name": "Tirapong Chaiyakun",
         "email": "msdos43@gmail.com",

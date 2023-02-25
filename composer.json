@@ -1,0 +1,30 @@
+{
+    "name": "deawx/cyberthaicore",
+    "type": "library",
+    "description": "Cyberthai core for accelerate development. Made for easy and fun development.",
+    "keywords": ["cyberthai", "projects", "deawx", "msdos43", "easy", "Funny"],
+    "homepage": "https://www.cyberthai.net",
+    "license": "Apache-2.0",
+    "authors": [{
+        "name": "Tirapong Chaiyakun",
+        "email": "msdos43@gmail.com",
+        "homepage": "https://www.cyberthai.net"
+    }],
+    "require": {
+        "php": ">=7.4",
+        "ext-pdo": "*",
+        "catfan/medoo": "^2.1",
+        "voku/anti-xss": "^4.1",
+        "volnix/csrf": "^1.2",
+        "endroid/qr-code": "^4.8",
+        "guzzlehttp/guzzle": "^7.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Cyberthai\\": "src/"
+        }
+    },
+    "config": {
+        "preferred-install": "dist"
+    }
+}

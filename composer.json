@@ -21,12 +21,12 @@
         "guzzlehttp/guzzle": "^7.5"
     },
     "suggest": {
-        "ext-pdo_mysql": "Can Use MySQL or MariaDB database",
-        "ext-pdo_sqlsrv": "Can Use MSSQL database on both Window/Liunx platform",
-        "ext-pdo_dblib": "Can Use MSSQL or Sybase database on Linux/UNIX platform",
-        "ext-pdo_oci": "Can Use Oracle database",
-        "ext-pdo_pqsql": "Can Use PostgreSQL database",
-        "ext-pdo_sqlite": "Can Use SQLite database"
+        "ext-pdo_mysql": "For MySQL or MariaDB database",
+        "ext-pdo_sqlsrv": "For MSSQL database on both Window/Liunx platform",
+        "ext-pdo_dblib": "For MSSQL or Sybase database on Linux/UNIX platform",
+        "ext-pdo_oci": "For Oracle database",
+        "ext-pdo_pqsql": "For PostgreSQL database",
+        "ext-pdo_sqlite": "For SQLite database"
     },
     "autoload": {
         "psr-4": {

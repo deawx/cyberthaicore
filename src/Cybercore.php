@@ -1,16 +1,16 @@
 <?php
 
 declare(strict_types=1);
-
+#       ╔══════════════════════════════════╗
+#             Cyberthai.php Core System 2022
+#             Author : (Deawx) Tirapong Chaiyakun
+#             Tel.089-0499359
+#             EMail: msdos43@gmail.com
+#             Website: https://www.cyberthai.net
+#             THAILAND PHP CODING. MADE EASY AND FUN.
+#       ╚══════════════════════════════════╝
 namespace Cyberthai;
-#       ╔══════════════════════════════════╗->╗
-#       ║  Cyberthai.php Core System 2022                             ║->║
-#       ║  Author : (Deawx) Tirapong Chaiyakun                      ║
-#       ║  Tel.089-0499359                                                    ║->║
-#       ║  EMail: msdos43@gmail.com                                    ║->║
-#       ║  Website: https://www.cyberthai.net                         ║
-#       ║  THAILAND PHP CODING. MADE EASY AND FUN.       ║->║
-#       ╚══════════════════════════════════╝->╝
+
 class Cybercore
 {
     private $db;
@@ -30,7 +30,7 @@ class Cybercore
     }
 
     // Check Is Login
-    public function CheckAdmin(string $username = "", $pwd = "")
+    public function CheckAdmin(string $username = "", string $pwd = "")
     {
         if (empty($username) || empty($pwd)) {
             echo "<script>window.location='login.html';</script>";
@@ -43,7 +43,7 @@ class Cybercore
         }
     }
 
-    private function ChkhasAdminInDB($username = "", $pwd = "")
+    private function ChkhasAdminInDB(string $username = "", string $pwd = "")
     {
         if (!empty($username) || !empty($pwd)) {
             $hasindb = $this->db->has("web_admin", [
@@ -58,7 +58,7 @@ class Cybercore
     }
 
     #สำหรับเชคว่ามีสิทธิ์ไหมถ้าไม่มีไปหน้า 404
-    public function CheckLevel($Action = "")
+    public function CheckLevel(string $Action = "")
     {
         $checklevel = $this->db->get("web_groups", $Action, [
             "id" => $_SESSION['admin_level'],

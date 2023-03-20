@@ -1,12 +1,12 @@
 <?php
-#       ╔══════════════════════════════════╗
-#             Cyberthai.php Core System 2022
-#             Author : (Deawx) Tirapong Chaiyakun
-#             Tel.089-0499359
-#             EMail: msdos43@gmail.com
-#             Website: https://www.cyberthai.net
-#             THAILAND PHP CODING. MADE EASY AND FUN.
-#       ╚══════════════════════════════════╝
+#       ╔═══════════════════════════════════════════╗
+#          Cyberthai.php Core System 2023
+#          Author : (Deawx) Tirapong Chaiyakun
+#          Tel.089-0499359
+#          EMail: msdos43@gmail.com
+#          Website: https://www.cyberthai.net
+#          PHP THAILAND CODING. MADE EASY AND FUN.
+#       ╚═══════════════════════════════════════════╝
 namespace Cyberthai\helper;
 
 use FilesystemIterator;

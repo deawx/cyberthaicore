@@ -1,29 +1,31 @@
 <?php
-#       ╔══════════════════════════════════╗
-#             Cyberthai.php Core System 2022
-#             Author : (Deawx) Tirapong Chaiyakun
-#             Tel.089-0499359
-#             EMail: msdos43@gmail.com
-#             Website: https://www.cyberthai.net
-#             THAILAND PHP CODING. MADE EASY AND FUN.
-#       ╚══════════════════════════════════╝
+#       ╔═══════════════════════════════════════════╗
+#          Cyberthai.php Core System 2023
+#          Author : (Deawx) Tirapong Chaiyakun
+#          Tel.089-0499359
+#          EMail: msdos43@gmail.com
+#          Website: https://www.cyberthai.net
+#          PHP THAILAND CODING. MADE EASY AND FUN.
+#       ╚═══════════════════════════════════════════╝
 namespace Cyberthai;
 
 use Medoo\Medoo;
+use Dotenv\Dotenv;
 
 class CyberDB
 {
     public function connect()
     {
         try {
+            $_ENV = Dotenv::createMutable('.')->load();
             $db = new medoo([
-                "type" => DB_TYPE,
-                "database" => DB_NAME,
-                "host" => DB_HOST,
-                "username" => DB_USERNAME,
-                "password" => DB_PASSWORD,
-                "port" => DB_PORT,
-                "charset" => DB_CHARSET,
+                "type" => $_ENV['DB_TYPE'],
+                "database" => $_ENV['DB_NAME'],
+                "host" => $_ENV['DB_HOST'],
+                "username" => $_ENV['DB_USERNAME'],
+                "password" => $_ENV['DB_PASSWORD'],
+                "port" => $_ENV['DB_PORT'],
+                "charset" => $_ENV['DB_CHARSET'],
                 "error" => \PDO::ERRMODE_SILENT,
                 "option" => [
                     \PDO::ATTR_CASE => \PDO::CASE_NATURAL,

@@ -18,6 +18,7 @@ class CyberDB
     {
         try {
             $_ENV = Dotenv::createMutable('.')->load();
+
             $db = new medoo([
                 "type" => $_ENV['DB_TYPE'],
                 "database" => $_ENV['DB_NAME'],
